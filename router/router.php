@@ -13,3 +13,5 @@ function get_template_folder($domain) {
     }
     return DEFAULT_TEMPLATE; // Fallback if no match
 }
+
+define('CURRENT_TEMPLATE', get_template_folder($_SERVER['HTTP_HOST']));
